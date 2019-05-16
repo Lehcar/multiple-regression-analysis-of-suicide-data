@@ -1,5 +1,4 @@
-#this is for the dataset including HDI and average annual hours worked
-myData <- read.csv("suicide-rates-overview-1985-to-2016\\master.csv")
+myData <- read.csv("data\\suicideData.csv")
 
 #suicide data for 2009
 suicide.2009 <- myData[myData$year=='2009',]

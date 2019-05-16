@@ -2,3 +2,4 @@
 .RData
 Project.Rproj
 /.Rproj.user/*
+.Rproj.user

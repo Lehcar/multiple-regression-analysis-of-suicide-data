@@ -1,4 +1,4 @@
-x <- read.csv("suicide-rates-overview-1985-to-2016\\master.csv")
+x <- read.csv("data\\suicideData.csv")
 
 mexico.suicide <- x[x$ï..country == "Mexico",]
 
