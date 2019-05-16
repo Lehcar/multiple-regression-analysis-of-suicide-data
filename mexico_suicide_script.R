@@ -14,7 +14,9 @@ plot(year, mexico.suicide$suicides.100k.pop,
      main="Suicides per 100k in Mexico from 1985 to 2015", xlab="Year", ylab="Suicides/100k")
 
 #mexico.suicide.fit <- lm(response ~ year + sex * age + gdp + generation)
-mexico.suicide.fit <- lm(response ~ year + sex * age + gdp.capita)
+#mexico.suicide.fit <- lm(response ~ year + sex * age + gdp.capita)
+mexico.suicide.fit <- lm(response ~ year + sex * age)
+
 summary(mexico.suicide.fit)
 
 fit.residuals <- residuals(mexico.suicide.fit)
