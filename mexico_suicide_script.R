@@ -10,10 +10,11 @@ gdp.capita <- mexico.suicide$gdp_per_capita....
 generation <- mexico.suicide$generation
 response <- mexico.suicide$suicides.100k.pop
 
-plot(united.states.suicide$year, mexico.suicide$suicides.100k.pop, 
+plot(year, mexico.suicide$suicides.100k.pop, 
      main="Suicides per 100k in Mexico from 1985 to 2015", xlab="Year", ylab="Suicides/100k")
 
-mexico.suicide.fit <- lm(response ~ year + sex * age + gdp + generation)
+#mexico.suicide.fit <- lm(response ~ year + sex * age + gdp + generation)
+mexico.suicide.fit <- lm(response ~ year + sex * age + gdp.capita)
 summary(mexico.suicide.fit)
 
 fit.residuals <- residuals(mexico.suicide.fit)
